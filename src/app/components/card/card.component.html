@@ -1,0 +1,14 @@
+ <div class="card_inner">
+    <div class="card_top">
+      <img [src]='data.links.mission_patch_small ? data.links.mission_patch_small : "assets/card_img.png"' alt="car" />
+    </div>
+    <div class="card_bottom">
+      <div class="card_info">
+        <p class="title">{{data.mission_name}} #{{data.flight_number}}</p>
+        <strong>Mission Ids</strong><br/>
+        <strong>Launch Year</strong>:{{data.launch_year}}<br/>
+        <strong>Successful Launch</strong>:{{data.launch_success+''}}<br/>
+        <strong>Successful Landing</strong>:{{data.launch_landing}}
+      </div>
+    </div>
+  </div>

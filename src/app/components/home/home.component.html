@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <h3 class="header">SpaceX Launch Program</h3>
+  <div class="main-container">
+    <div class="sidebar-container">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="card-container">
+    <div class="cards_wrap">
+      <ng-container *ngFor="let data of cards">
+        <div class="card_item">
+          <app-card [data]='data'></app-card>
+        </div>
+      </ng-container>
+      </div>
+    </div>
+  </div>
+  <h4 class="footer">Developed By : Shashank Gupta</h4>
+</div>

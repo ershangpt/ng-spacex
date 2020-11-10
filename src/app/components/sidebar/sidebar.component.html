@@ -1,0 +1,10 @@
+<div class="left-panel">
+  <h4>Filter</h4>
+    <div *ngFor="let item of FILTERS | keyvalue: keepOrder">
+        <span class="filter-title">{{item.value['label']}}</span>
+        <hr />
+        <div class="filter-opt">
+          <span (click)="onBadgeClick(item.key, val)" class="badge badge-success" [ngClass]="{'selected-badge': (selectedBadge[item.key] && selectedBadge[item.key] === val)}" *ngFor="let val of item.value['data']">{{val}}</span>
+        </div>
+    </div>
+</div>
